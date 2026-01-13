@@ -25,6 +25,12 @@ jobs:
         with:
           context: .
           push: true
+          tags: |      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/final-python:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/final-python:${{ github.sha }}
+            sawsaniyad/final-python:latest
+            sawsaniyad/final-python:${{ github.sha }}
+
