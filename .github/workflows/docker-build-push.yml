@@ -29,4 +29,3 @@ jobs:
           context: .
           push: true
           tags: sawsaniyad/final-python-app:latest
-          # Optional: add more tags like :${{ github.sha }}
